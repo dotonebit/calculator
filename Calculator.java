@@ -18,13 +18,11 @@ class Calculator {
     }
 
     public void subtract(int value) {
-        this.result += value;
+        this.result -= value;
     }
 
     public void multiply(int value) {
-        for (int i=1; i<value; i++) {
-            add(value);
-        }
+        this.result *= value;
     }
 
     public void exponent(int value) {
