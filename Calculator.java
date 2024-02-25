@@ -26,8 +26,13 @@ class Calculator {
     }
 
     public void exponent(int value) {
-        for(int i=1; i<value; i++) {
-            multiply(value);
+        int base = this.result;
+        int tempResult = 1;
+
+        for (int i = 0; i < value; i++) {
+            tempResult *= base;
         }
+
+        this.result = tempResult;
     }
 }
